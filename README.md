@@ -1,5 +1,5 @@
-[![codebeat badge](https://codebeat.co/badges/a4ef616a-bcf6-47b8-a0fb-05f9e3506e3c)](https://codebeat.co/projects/github-com-marckesin-restful-api-postgresql-main) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB)
+[![codebeat badge](https://codebeat.co/badges/34e8d11a-7ca2-4180-8b9e-b5901a448c54)](https://codebeat.co/projects/github-com-marckesin-restful-api-mongodb-main) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=flat&logo=express&logoColor=%2361DAFB)
 
 # RESTful API - MongoDB Atlas
 
-Desenvolvida em Nodejs/Expressjs e MongoDB.
+Aplicação RESTful desenvolvida em Node/Express e integração com banco de dados MongoDB Atlas [https://www.mongodb.com/atlas](https://www.mongodb.com/atlas).

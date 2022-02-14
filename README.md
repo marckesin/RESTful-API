@@ -3,3 +3,13 @@
 # RESTful API - MongoDB Atlas
 
 Aplicação RESTful desenvolvida em Node/Express e integração com banco de dados MongoDB Atlas [https://www.mongodb.com/atlas](https://www.mongodb.com/atlas).
+
+### Endpoints
+
+---
+
+GET: /users
+GET by id: /users/:id
+POST: /users
+PUT: /users/:id
+DELETE: /users/:id

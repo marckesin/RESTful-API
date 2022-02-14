@@ -1,9 +1,7 @@
-var express = require('express');
-var router = express.Router();
+const userRoute = require("./user");
+const statusRoute = require("./status");
 
-// Página inicial
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'RESTful API' });
-});
-
-module.exports = router;
+module.exports = app => {
+  app.use(userRoute);
+  app.use(statusRoute);
+};

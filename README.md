@@ -8,8 +8,8 @@ Aplicação RESTful desenvolvida em Node/Express e integração com banco de dad
 
 ---
 
-GET: /users
-GET by id: /users/:id
-POST: /users
-PUT: /users/:id
-DELETE: /users/:id
+- GET: /users
+- GET by id: /users/:id
+- POST: /users
+- PUT: /users/:id
+- DELETE: /users/:id

@@ -163,6 +163,7 @@ dist
 
 .prettierrc
 .vscode
+.deta
 
 # Support for Project snippet scope
 

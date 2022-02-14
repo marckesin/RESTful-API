@@ -27,3 +27,5 @@ mongoose
 mounRoute(app);
 
 app.listen(port);
+
+module.exports = app;

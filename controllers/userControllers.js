@@ -3,7 +3,7 @@ const User = require("../models/user.model");
 
 exports.userGetAll = async (req, res) => {
   await User.find({}).exec((err, result) => {
-    res.send(result);
+    return res.send(result);
   });
 };
 
@@ -26,7 +26,7 @@ exports.userCreate = async (req, res) => {
 
   await user.validate(err => {
     if (!err) {
-      res.sendStatus(201);
+      res.status(201).send("User created.");
       user.save();
     }
   });
@@ -38,10 +38,10 @@ exports.userUpdate = async (req, res) => {
 
   await User.findByIdAndUpdate(id, {
     username: username,
-    password: password,
+    password: md5(password),
   }).exec((err, result) => {
     if (!err && result) {
-      return res.status(200).send(result);
+      return res.status(200).send("User updated.");
     }
     res.sendStatus(404);
   });
@@ -50,9 +50,9 @@ exports.userUpdate = async (req, res) => {
 exports.userDelete = async (req, res) => {
   const id = req.params.id;
 
-  await User.findByIdAndDelete(id).exec((err, result) => {
-    if (!err && result) {
-      return res.status(200).send(result);
+  User.deleteOne({ _id: id }, (err, result) => {
+    if (!err && result.deletedCount) {
+      return res.status(200).send("User deleted.");
     }
     res.sendStatus(404);
   });

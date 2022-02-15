@@ -25,8 +25,8 @@
     "node",
     "express",
     "rest api",
-    "mongoDB",
+    "mongodb",
     "mongoose"
   ],
-  "description": "RESTful API desenvolvida em Node/Express e MongoDB."
+  "description": "RESTful API desenvolvida em Node/Express e MongoDB Atlas."
 }

@@ -14,5 +14,5 @@ Aplicação RESTful para operações CRUD desenvolvida em Node/Express e integra
 
 ## Ferramentas
 
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
-[Thunder Client](https://www.thunderclient.com/)
+- [Thunder Client](https://www.thunderclient.com/)
+- [Postman](https://www.postman.com/)

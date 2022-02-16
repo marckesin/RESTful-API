@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
-const mounRoute = require("./routes/index");
+const mountRoute = require("./routes/index");
 
 const port = process.env.PORT || 3000;
 
@@ -24,7 +24,7 @@ mongoose
     throw err;
   });
 
-mounRoute(app);
+mountRoute(app);
 
 app.listen(port);
 

@@ -1,13 +1,15 @@
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
+const helmet = require("helmet");
+
 const mountRoute = require("./routes/index");
 
 const port = process.env.PORT || 3000;
 
 const app = express();
 
-app.set("x-powered-by", false);
+app.use(helmet.hidePoweredBy());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

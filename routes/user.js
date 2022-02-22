@@ -17,8 +17,16 @@ router.put("/users/:id", usersController.userUpdate);
 
 router.delete("/users/:id", usersController.userDelete);
 
-router.use("*", (req, res) => {
+router.all("*", (req, res) => {
   res.status(404).send("Endpoint not found.");
+});
+
+router.use("/users/:id", (err, req, res, next) => {
+  res.locals.message = err.message;
+  res
+    .status(err.status || 500)
+    .json({ method: req.method, error: err.message });
+  next();
 });
 
 module.exports = router;

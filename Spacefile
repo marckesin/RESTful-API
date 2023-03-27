@@ -1,0 +1,11 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: RESTful-API-MongoDB
+    src: .
+    engine: nodejs16
+    primary: true
+    dev: nodemon index.js
+    run: "node index.js"
+    public_routes:
+      - "/*"

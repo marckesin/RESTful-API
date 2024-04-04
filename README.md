@@ -40,4 +40,3 @@ DELETE /users/id
 
 - [Thunder Client](https://www.thunderclient.com/)
 - [Postman](https://www.postman.com/)
--
